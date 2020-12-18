@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Photo</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+
+            <!--Images de diapos -->
+            <div class="diapo">
+                <img class="diapoImage" src="src/img/wexor-tmg-L-2p8fapOA8-unsplash.jpg" alt="">
+            </div>
+            <div class="dipo">
+                <img class="diapoImage" src="src/img/cara-fuller-QF38t6obcnk-unsplash.jpg" alt="">
+            </div>
+            <div class="diapo">
+                <img class="diapoImage" src="src/img/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" alt="">
+            </div>
+
+            <!--Boutons de controles-->
+            <button onclick="precedent(1)"><img class="iconsR" src="src/img/iconfinder_left_arrow_476327.svg" alt="bouton vers la gauche">
+            <button onclick="suivant(-1)"><img class="iconsL" src="src/img/iconfinder_right_arrow_476325.svg" alt="bouton vers la droite">
+
+        </div>
+
+        <!--Indicateurs-->
+        <div class="indicateurs">
+            <span class="indicateursPoints" onclick="diapoNumero(1)"></span>
+            <span class="indicateursPoints" onclick="diapoNumero(2)"></span>
+            <span class="indicateursPoints" onclick="diapoNumero(3)"></span>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
